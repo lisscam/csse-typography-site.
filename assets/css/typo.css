@@ -1,0 +1,222 @@
+@import url(font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Pattaya|Work+Sans:400,200,300);
+
+/* Reset */
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+
+	body {
+		line-height: 1;
+	}
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	body {
+		-webkit-text-size-adjust: none;
+	}
+
+/* Type */
+
+	body {
+		color: rgb(255, 255, 255);
+	}
+
+	body {
+		font-family: "Work Sans", sans-serif;
+		font-size: 13pt;
+		font-weight: 300;
+		line-height: 1.65;
+	}
+
+		@media screen and (max-width: 1680px) {
+
+			body .title{
+				font-size: 11pt;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			body .title  {
+				font-size: 11pt;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			body .title {
+				font-size: 12pt;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			body .title  {
+				font-size: 12pt;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			body .title {
+				font-size: 12pt;
+			}
+
+		}
+
+
+
+/* Image */
+
+	.image {
+		border-radius: 4px;
+		border: 0;
+		display: inline-block;
+        position: relative;
+	}
+
+		.image img {
+			border-radius: 4px;
+			display: block;
+		}
+
+		.image.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.image.fit img {
+				width: 100%;
+			}
+
+		.image.main {
+			display: block;
+			margin: 0 0 3em 0;
+			width: 100%;
+		}
+
+			.image.main img {
+				width: 100%;
+			}
+
+
+/* Columns */
+
+	.columns {
+		position: relative;
+		-moz-column-count: 4;
+		-webkit-column-count: 4;
+		column-count: 4;
+		-moz-column-gap: 1em;
+		-webkit-column-gap: 1em;
+		column-gap: 1em;
+	}
+        .columns .image .title {
+            width: 100%;
+            position: absolute;
+            bottom: 0em;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #e74d3cbe;
+        }
+        h1 {
+            font-family: 'fontawesome-webfont.woff2';
+            font-size: large;
+            color: #fff;
+        }
+
+            .columns .title {
+                -moz-transition: -moz-transform 0.2s ease-in-out;
+                -webkit-transition: -webkit-transform 0.2s ease-in-out;
+                -ms-transition: -ms-transform 0.2s ease-in-out;
+                transition: transform 0.2s ease-in-out;
+                -webkit-backface-visibility: hidden;
+                -webkit-transform: translate3D(0, 0, 0);
+            }
+
+            .columns .image:hover .title {
+                -webkit-transform: translate3D(1, 1, 1);
+                transition: transform 0.2s ease-in-out;
+                background-color: #e74c3c;
+
+            }
+
+		.columns .image {
+
+			position: relative;
+			display: inline-block;
+			margin: 0 0 .5em;
+			width: 100%;
+			overflow: hidden;
+		}
+
+			.columns .image img {
+				-moz-transition: -moz-transform 0.2s ease-in-out;
+				-webkit-transition: -webkit-transform 0.2s ease-in-out;
+				-ms-transition: -ms-transform 0.2s ease-in-out;
+				transition: transform 0.2s ease-in-out;
+				-webkit-backface-visibility: hidden;
+				-webkit-transform: translate3D(0, 0, 0);
+			}
+
+			.columns .image:hover img {
+				-moz-transform: scale(1.1);
+				-webkit-transform: scale(1.1);
+				-ms-transform: scale(1.1);
+				transform: scale(1.1);
+			}
+
+		@media screen and (max-width: 736px) {
+
+			.columns {
+				-moz-column-count: 2;
+				-webkit-column-count: 2;
+				column-count: 2;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.columns {
+				-moz-column-count: 1;
+				-webkit-column-count: 1;
+				column-count: 1;
+			}
+
+			.title {
+				height: 100%;
+			}
+
+		}
+
+
+/* Main */
+
+	#main {
+		padding: 2em;
+	}
+
+		#main .inner {
+			max-width: 100%;
+		}
+
